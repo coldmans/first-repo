@@ -112,9 +112,6 @@ const ResultModal = ({ isOpen, chicken, fortune, onClose, onShare }) => {
 
               <motion.div
                 className="result-brand"
-                style={{
-                  background: chicken.gradient,
-                }}
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{
@@ -123,7 +120,14 @@ const ResultModal = ({ isOpen, chicken, fortune, onClose, onShare }) => {
                   delay: 0.5
                 }}
               >
-                <span className="brand-emoji">{chicken.emoji}</span>
+                <div className="result-image-wrapper">
+                  <img
+                    src={chicken.image}
+                    alt={chicken.brand}
+                    className="result-chicken-image"
+                  />
+                  <div className="result-image-overlay" style={{ background: chicken.gradient }}></div>
+                </div>
                 <span className="brand-name">{chicken.brand}</span>
               </motion.div>
 

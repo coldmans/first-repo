@@ -4,6 +4,7 @@ export const chickenData = [
     brand: "교촌치킨",
     menu: "허니콤보",
     emoji: "🍯",
+    image: "https://images.unsplash.com/photo-1562967914-608f82629710?w=400&q=80",
     color: "#FF6B35",
     gradient: "linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)",
     fortunes: [
@@ -19,6 +20,7 @@ export const chickenData = [
     brand: "BHC",
     menu: "뿌링클",
     emoji: "🧀",
+    image: "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&q=80",
     color: "#FFD93D",
     gradient: "linear-gradient(135deg, #FFD93D 0%, #FCBF49 100%)",
     fortunes: [
@@ -34,6 +36,7 @@ export const chickenData = [
     brand: "BHC",
     menu: "맛초킹",
     emoji: "🌶️",
+    image: "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=400&q=80",
     color: "#E63946",
     gradient: "linear-gradient(135deg, #E63946 0%, #F77F00 100%)",
     fortunes: [
@@ -49,6 +52,7 @@ export const chickenData = [
     brand: "BBQ",
     menu: "황금올리브",
     emoji: "✨",
+    image: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=400&q=80",
     color: "#FFB800",
     gradient: "linear-gradient(135deg, #FFB800 0%, #FFA500 100%)",
     fortunes: [
@@ -64,6 +68,7 @@ export const chickenData = [
     brand: "BBQ",
     menu: "자메이카통다리",
     emoji: "🏝️",
+    image: "https://images.unsplash.com/photo-1528696892704-5e1122852276?w=400&q=80",
     color: "#06A77D",
     gradient: "linear-gradient(135deg, #06A77D 0%, #05B2DC 100%)",
     fortunes: [
@@ -79,6 +84,7 @@ export const chickenData = [
     brand: "굽네치킨",
     menu: "고추바사삭",
     emoji: "🔥",
+    image: "https://images.unsplash.com/photo-1606312619070-d48b4a0a4e23?w=400&q=80",
     color: "#DC3545",
     gradient: "linear-gradient(135deg, #DC3545 0%, #C82333 100%)",
     fortunes: [
@@ -94,6 +100,7 @@ export const chickenData = [
     brand: "60계치킨",
     menu: "크크크치킨",
     emoji: "😂",
+    image: "https://images.unsplash.com/photo-1513639776629-7b61b0ac49cb?w=400&q=80",
     color: "#FF6B9D",
     gradient: "linear-gradient(135deg, #FF6B9D 0%, #C06C84 100%)",
     fortunes: [
@@ -109,6 +116,7 @@ export const chickenData = [
     brand: "네네치킨",
     menu: "스노윙치킨",
     emoji: "❄️",
+    image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?w=400&q=80",
     color: "#4ECDC4",
     gradient: "linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%)",
     fortunes: [
@@ -124,6 +132,7 @@ export const chickenData = [
     brand: "멕시카나",
     menu: "치필링",
     emoji: "🌶️",
+    image: "https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=400&q=80",
     color: "#FF6B35",
     gradient: "linear-gradient(135deg, #FF6B35 0%, #D62828 100%)",
     fortunes: [
@@ -139,6 +148,7 @@ export const chickenData = [
     brand: "처갓집양념치킨",
     menu: "슈프림양념",
     emoji: "👑",
+    image: "https://images.unsplash.com/photo-1598224554137-5dad10641b57?w=400&q=80",
     color: "#9B59B6",
     gradient: "linear-gradient(135deg, #9B59B6 0%, #8E44AD 100%)",
     fortunes: [
@@ -154,6 +164,7 @@ export const chickenData = [
     brand: "푸라닭",
     menu: "볼케이노",
     emoji: "🌋",
+    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=400&q=80",
     color: "#FF4500",
     gradient: "linear-gradient(135deg, #FF4500 0%, #FF6347 100%)",
     fortunes: [
@@ -169,6 +180,7 @@ export const chickenData = [
     brand: "노랑통닭",
     menu: "옛날통닭",
     emoji: "🐓",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80",
     color: "#F4A460",
     gradient: "linear-gradient(135deg, #F4A460 0%, #D2691E 100%)",
     fortunes: [
@@ -178,6 +190,134 @@ export const chickenData = [
     ],
     description: "추억의 그 맛",
     tags: ["옛날", "추억", "담백"]
+  },
+  {
+    id: 13,
+    brand: "자담치킨",
+    menu: "자담순살",
+    emoji: "💎",
+    image: "https://images.unsplash.com/photo-1565299543923-37dd37887442?w=400&q=80",
+    color: "#3498db",
+    gradient: "linear-gradient(135deg, #3498db 0%, #2980b9 100%)",
+    fortunes: [
+      "보석같은 하루가 당신을 기다려요! 💎",
+      "순살처럼 부드러운 일만 생길 거예요! ✨",
+      "오늘은 프리미엄 행운의 날! 🌟"
+    ],
+    description: "프리미엄 순살의 품격",
+    tags: ["순살", "프리미엄", "부드러움"]
+  },
+  {
+    id: 14,
+    brand: "호식이두마리치킨",
+    menu: "후라이드+양념",
+    emoji: "🎭",
+    image: "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?w=400&q=80",
+    color: "#e74c3c",
+    gradient: "linear-gradient(135deg, #e74c3c 0%, #c0392b 100%)",
+    fortunes: [
+      "두 배의 행운이 찾아올 거예요! 🎭",
+      "양면의 재미, 이중의 기쁨! 🎉",
+      "오늘은 선택 장애 없는 완벽한 하루! 👍"
+    ],
+    description: "한 번에 두 가지 맛",
+    tags: ["반반", "가성비", "인기"]
+  },
+  {
+    id: 15,
+    brand: "페리카나",
+    menu: "오리지널",
+    emoji: "🦅",
+    image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=400&q=80",
+    color: "#f39c12",
+    gradient: "linear-gradient(135deg, #f39c12 0%, #e67e22 100%)",
+    fortunes: [
+      "원조의 맛처럼 정통 행운이! 🦅",
+      "클래식한 성공이 기다려요! 🎯",
+      "오늘은 믿음직한 하루가 될 거예요! 💪"
+    ],
+    description: "원조 통닭의 자부심",
+    tags: ["원조", "클래식", "정통"]
+  },
+  {
+    id: 16,
+    brand: "지코바치킨",
+    menu: "순살강정",
+    emoji: "🍖",
+    image: "https://images.unsplash.com/photo-1588347818036-fa6902e52c73?w=400&q=80",
+    color: "#e91e63",
+    gradient: "linear-gradient(135deg, #e91e63 0%, #c2185b 100%)",
+    fortunes: [
+      "강정처럼 쫄깃한 행운이! 🍖",
+      "달달하고 쫀득한 하루! 🍯",
+      "오늘은 중독적인 일이 생길 거예요! 😋"
+    ],
+    description: "쫄깃달콤 강정의 매력",
+    tags: ["강정", "달콤", "쫄깃"]
+  },
+  {
+    id: 17,
+    brand: "또래오래",
+    menu: "옛날후라이드",
+    emoji: "👴",
+    image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80",
+    color: "#95a5a6",
+    gradient: "linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%)",
+    fortunes: [
+      "옛 친구처럼 반가운 일이! 👴",
+      "오래된 행운이 찾아올 거예요! 🌟",
+      "오늘은 향수를 자극하는 하루! 📻"
+    ],
+    description: "세월의 맛을 담은",
+    tags: ["옛날", "전통", "정통"]
+  },
+  {
+    id: 18,
+    brand: "땅땅치킨",
+    menu: "핫땡초",
+    emoji: "💥",
+    image: "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&q=80",
+    color: "#ff5722",
+    gradient: "linear-gradient(135deg, #ff5722 0%, #f4511e 100%)",
+    fortunes: [
+      "땡! 하고 행운이 터질 거예요! 💥",
+      "핫한 일들이 가득한 하루! 🔥",
+      "오늘은 폭발적인 성공이! 🎆"
+    ],
+    description: "땡초의 강렬한 자극",
+    tags: ["매운맛", "핫", "강렬"]
+  },
+  {
+    id: 19,
+    brand: "바른치킨",
+    menu: "오리지널",
+    emoji: "🌿",
+    image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=400&q=80",
+    color: "#27ae60",
+    gradient: "linear-gradient(135deg, #27ae60 0%, #229954 100%)",
+    fortunes: [
+      "바른 먹거리처럼 건강한 하루! 🌿",
+      "건강한 행운이 찾아올 거예요! 💚",
+      "오늘은 깨끗하고 바른 일만! ✨"
+    ],
+    description: "건강을 생각한 바른 선택",
+    tags: ["건강", "웰빙", "깨끗"]
+  },
+  {
+    id: 20,
+    brand: "맘스터치",
+    menu: "싸이버거세트",
+    emoji: "🍔",
+    image: "https://images.unsplash.com/photo-1623855244175-f67ba92c2110?w=400&q=80",
+    color: "#f44336",
+    gradient: "linear-gradient(135deg, #f44336 0%, #d32f2f 100%)",
+    fortunes: [
+      "싸이처럼 강남스타일 행운! 🍔",
+      "오늘은 엄청난 일이 생길 거예요! 🎵",
+      "세계적인 성공이 기다려요! 🌍"
+    ],
+    description: "치킨버거의 완벽한 조화",
+    tags: ["버거", "특별", "인기"]
   }
 ];
 

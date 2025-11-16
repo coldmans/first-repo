@@ -68,51 +68,65 @@
 }
 
 .chicken-item {
-  padding: 14px 18px;
-  border-radius: 30px;
+  padding: 8px;
+  border-radius: 20px;
   font-weight: 700;
-  font-size: 0.85em;
+  font-size: 0.75em;
   color: white;
   text-align: center;
   cursor: pointer;
-  min-width: 90px;
+  min-width: 85px;
+  max-width: 95px;
+  background: rgba(255, 255, 255, 0.95);
   box-shadow:
     0 6px 20px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chicken-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
+.chicken-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chicken-image {
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.chicken-item:hover::before {
-  left: 100%;
-}
-
-.chicken-emoji {
-  font-size: 1.6em;
+  object-fit: cover;
   display: block;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.chicken-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 .chicken-brand {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.2;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-weight: 800;
+  text-shadow: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 0 4px;
 }
 
 /* 모바일 최적화 */
