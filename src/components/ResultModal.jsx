@@ -51,32 +51,32 @@ const ResultModal = ({ isOpen, chicken, fortune, onClose, onShare }) => {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* 배경 오버레이 */}
+          {/* 배경 오버레이 + 모달 래퍼 */}
           <motion.div
             className="modal-overlay"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-          />
-
-          {/* 컨페티 효과 */}
-          <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 9999 }}>
-            <Confetti autorun={{ speed: 3, duration: 3000 }} />
-          </div>
-
-          {/* 모달 컨텐츠 */}
-          <motion.div
-            className="modal-content"
-            initial={{ scale: 0.3, rotate: -15, opacity: 0 }}
-            animate={{ scale: 1, rotate: 0, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{
-              type: "spring",
-              stiffness: 300,
-              damping: 25
-            }}
           >
+            {/* 컨페티 효과 */}
+            <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 10000 }}>
+              <Confetti autorun={{ speed: 3, duration: 3000 }} />
+            </div>
+
+            {/* 모달 컨텐츠 */}
+            <motion.div
+              className="modal-content"
+              initial={{ scale: 0.3, rotate: -15, opacity: 0 }}
+              animate={{ scale: 1, rotate: 0, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 25
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
             {/* 결과 애니메이션 */}
             <motion.div
               className="result-animation"
@@ -199,6 +199,7 @@ const ResultModal = ({ isOpen, chicken, fortune, onClose, onShare }) => {
                 <IoMdRefresh /> 다시 돌리기
               </motion.button>
             </motion.div>
+          </motion.div>
           </motion.div>
         </>
       )}
