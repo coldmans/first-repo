@@ -1,9 +1,10 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
 import Roulette from './components/Roulette';
 import ResultModal from './components/ResultModal';
 import ParticleBackground from './components/ParticleBackground';
 import { getRandomChicken, getRandomFortune } from './data/chickenData';
+import { playClickSound, playSpinningLoop, playResultSound } from './utils/sound';
 import { GiChickenOven } from 'react-icons/gi';
 import './App.css';
 
@@ -14,9 +15,13 @@ function App() {
   const [showResult, setShowResult] = useState(false);
   const [clickCount, setClickCount] = useState(0);
   const [shake, setShake] = useState(false);
+  const stopSpinningSound = useRef(null);
 
   const handleSpin = useCallback(() => {
     if (isSpinning) return;
+
+    // 클릭 사운드
+    playClickSound();
 
     // 이스터에그: 5번 연속 클릭
     setClickCount(prev => {
@@ -39,6 +44,9 @@ function App() {
     setSelectedChicken(chicken);
     setFortune(selectedFortune);
 
+    // 회전 사운드 시작
+    stopSpinningSound.current = playSpinningLoop();
+
     // 진동 효과
     if (navigator.vibrate) {
       navigator.vibrate([100, 50, 100, 50, 100, 50, 100]);
@@ -46,9 +54,18 @@ function App() {
   }, [isSpinning]);
 
   const handleSpinComplete = useCallback(() => {
+    // 회전 사운드 중지
+    if (stopSpinningSound.current) {
+      stopSpinningSound.current();
+      stopSpinningSound.current = null;
+    }
+
     setTimeout(() => {
       setIsSpinning(false);
       setShowResult(true);
+
+      // 결과 사운드
+      playResultSound();
 
       // 화면 플래시 효과
       document.body.style.animation = 'flash 0.5s';

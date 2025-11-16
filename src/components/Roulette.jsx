@@ -62,9 +62,6 @@ const Roulette = ({ isSpinning, onSpinComplete, selectedChicken }) => {
             <motion.div
               key={chicken.id}
               className="chicken-item"
-              style={{
-                background: chicken.gradient,
-              }}
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{
@@ -73,10 +70,18 @@ const Roulette = ({ isSpinning, onSpinComplete, selectedChicken }) => {
                 stiffness: 260,
                 damping: 20
               }}
-              whileHover={{ scale: 1.1, rotate: 5, zIndex: 10 }}
+              whileHover={{ scale: 1.05, zIndex: 10 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span className="chicken-emoji">{chicken.emoji}</span>
+              <div className="chicken-image-wrapper">
+                <img
+                  src={chicken.image}
+                  alt={chicken.brand}
+                  className="chicken-image"
+                  loading="lazy"
+                />
+                <div className="chicken-overlay" style={{ background: chicken.gradient }}></div>
+              </div>
               <span className="chicken-brand">{chicken.brand}</span>
             </motion.div>
           ))}
